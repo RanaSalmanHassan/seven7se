@@ -1,0 +1,330 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Establishing a color scheme */
+:root {
+  --primary-color: #0052cc ;       /* Primary color for buttons and links */
+  --secondary-color: #00c7d9;     /* Secondary color for accents and icons */
+  --text-color: #333;             /* Main text color */
+  --background-color: #f4f4f4;    /* Background color for the body */
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Utility classes for padding and full-width containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0, 15px;
+}
+
+.full-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Defining gold text color and centering the text for the header */
+.gold-text {
+  color: gold;
+  text-align: center;
+  font-size: 2em;
+  /* additional styles, such as margin and padding, can be adjusted as needed */
+}
+/* Create a class for the boxes */
+.box {
+  width: 250px; /* Set the width of the content area */
+  height: 300px; /* Set the height of the content area */
+  padding: 20px; /* Add some space around the content area */
+  margin: 10px; /* Add some space outside the border */
+  box-sizing: border-box; /* Include the padding and border in the width and height calculation */
+  border-radius: 0 20% 0 20%;
+  display: inline-block; /* Make the boxes flow horizontally */
+}
+
+/* Add some background color to the boxes */
+.box1 {
+  background-color: white;
+  border: 1px solid #FFD700;
+}
+
+.box2 {
+  background-color: white;
+  border: 1px solid #0052cc;
+}
+
+.box3 {
+  background-color: white;
+  border: 2px solid pink;
+}
+.box4 {
+	background-color: white;
+	border: 1px solid green;
+}
+
+/* Navigation and header styles */
+header {
+	background: var(--primary-color);
+	color: white;
+	padding: 20px 0;
+	text-align: center; /* Center header content */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Logo image styles */
+.logo img.logo-image {
+	height: 60px; /* Adjust as needed */
+	width: 60px;  /* Make width and height equal for a perfect circle */
+	border-radius: 50%; /* This creates the round shape */
+	object-fit: cover; /* Ensures the image covers the area without being distorted */
+	display: block; /* To display the image as a block-level element */
+	margin: 0 auto;
+	/* Centers the logo in the container */
+
+}
+
+/* The logo */
+.logo {
+	height: 100px;
+}
+nav {
+	float: right;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+  margin-left: 10px;
+  display: inline;
+  padding: 3px;
+  margin-bottom: 4px;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  text-decoration: underline;
+}
+/* Introduction styles with background image */
+.intro {
+  text-align: center;
+  padding: 50px 0;
+  /* Change the background image to use only the second image from your local folder */
+  background-image: url('images/intro-img/image4.jpg');
+  /* Adjust the position and size of the image as needed */
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  width: 100%;
+  height: 350px;
+  /* Remove the animation, background-repeat, and overflow properties */
+}
+
+/* Introduction styles with background image */
+.quote-btn{
+  border: 1px solid black;
+  border-radius: 1.3rem;
+  font-weight: 600;
+
+}
+
+.quote-btn:hover{
+  background-color:#0052cc;
+  color: white;
+}
+
+.intro h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  background: white;
+  color: var(--primary-color);
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Services section */
+.services {
+  padding: 50px 0;
+}
+
+.services .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service img {
+  width: 60px; /* Adjust service icon size */
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+/* Testimonials slider */
+.testimonials {
+  padding: 50px 0;
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+}
+
+.testimonial {
+  min-width: 300px;
+  border: 2px solid pink;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+}
+
+.testimonial img {
+  height: 80px;
+  width: 80px;/* Adjust client image size */
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.contact,
+.social {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social li {
+  margin: 0 10px;
+}
+
+.social a {
+  color: white;
+}
+
+.social i {
+  font-size: 1.5em;
+}
+
+.contact p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.contact i {
+  font-size: 1.2em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header,
+  .container,
+  footer {
+    padding: 20px 20px;
+
+}
+   /* Define gold text color */
+/* Add this to your style.css file */
+
+/* Define gold text color */
+.gold-text {
+  color: gold;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Add the gold-text class to the header theme */
+header .container .logo h1 {
+  display: none; /* Hide the original logo text */
+}
+/* Additions to style.css after the existing CSS definitions */
+
+/* Using Roboto for improved readability */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Form field animations */
+input[type="text"],
+input[type="password"] {
+    transition: border 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid var(--secondary-color);
+}
+
+/* Hidden class for the caps-lock message */
+.hidden {
+    display: none;
+}
+
+/* Responsive input fields */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
