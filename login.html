@@ -4,53 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to the style.css file -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
     <title>Login - Seven Services Establishment</title>
 </head>
 <body>
-    <!-- Header section with logo and navigation menu -->
-    <header>
-    <div class="container">
-        <div class="logo">
-            <!-- Replace the text logo with the required theme -->
-            <img src="logo.png" alt="7-SE" class="logo-image">
-            <h1 class="gold-text">7-Services Establishement LLC</h1>
+    <div class="login-page">
+        <div class="form">
+          <form class="register-form">
+            <input type="text" placeholder="name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="email address"/>
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+          </form>
+          <form class="login-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>
+            <button>login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
         </div>
-        <nav>
-            <!-- Navigation menu with links to other pages -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="offers.html">Offers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html" class="active">Login</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-    <!-- Login section with social media icons and input fields -->
-    <section class="login">
-        <div class="container">
-            <h1>LOGIN FORM</h1>
-            <p>SIGN IN WITH</p>
-            <div class="icons">
-                <a href="https://www.google.com/"><i class="fab fa-google fa-2x"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a href="https://www.twitter.com/"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-2x"></i></a>
-            </div>
-            <h3>OR</h3>
-            <form action="action_page.php" method="post">
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <input type="password" name="password" id="password" placeholder="Password" required>
-                <button type="submit">Sign In</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </form>
-            <p>Don't have an account? <a href="sign-up.html">Sign Up</a></p>
-            <a href="reset-password.html">Forgot Password</a>
-        </div>
-    </section>
+      </div>
 </body>
 </html>
