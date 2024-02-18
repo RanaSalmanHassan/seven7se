@@ -52,7 +52,7 @@
     color: #536387;
   }
   .formbold-form-input:focus {
-    border-color: #6A64F1;
+    border-color: #0052cc;
   }
   .formbold-form-label {
     color: #07074D;
@@ -63,7 +63,7 @@
     margin-bottom: 18px;
   }
   .formbold-form-input:focus + .formbold-form-label {
-    color: #6A64F1;
+    color: #0052cc;
   }
 
   .formbold-input-file {
@@ -106,7 +106,7 @@
     padding: 12px 25px;
     border: none;
     font-weight: 500;
-    background-color: #6A64F1;
+    background-color: #0052cc;
     color: white;
     cursor: pointer;
     margin-top: 25px;
