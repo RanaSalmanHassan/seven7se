@@ -1,0 +1,53 @@
+/* Header styles */
+header {
+    background: #0052cc;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo image styles */
+.logo img.logo-image {
+    height: 60px; /* Adjust as needed */
+    width: 60px; /* Make width and height equal for a perfect circle */
+    border-radius: 50%; /* This creates the round shape */
+    object-fit: cover; /* Ensures the image covers the area without being distorted */
+    display: block; /* To display the image as a block-level element */
+    margin: 0 auto; /* Centers the logo in the container */
+}
+
+/* The logo */
+.logo {
+    height: 100px;
+}
+
+
+/* Navigation styles */
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 10px;
+    display: inline;
+    padding: 3px;
+    margin-bottom: 4px;
+    font-size: larger;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    text-decoration: underline;
+}

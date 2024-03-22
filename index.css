@@ -110,6 +110,7 @@ nav ul li {
   display: inline;
   padding: 3px;
   margin-bottom: 4px;
+  font-size: larger;
 
 }
 
@@ -145,6 +146,7 @@ nav a:hover {
   border: 1px solid black;
   border-radius: 1.3rem;
   font-weight: 600;
+  
 
 }
 

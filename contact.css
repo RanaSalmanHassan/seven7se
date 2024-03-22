@@ -1,35 +1,49 @@
-
-
-body{
+body {
   text-align: center;
 }
 
 .overlay {
   background-image: linear-gradient(to right, rgba(90, 100, 232, 0.9), rgba(84, 96, 234, 0.9));
   width: 100%;
-  height: 100%;
+  height: 100vh; /* Adjusted to fill the entire viewport height */
   z-index: 1;
   position: relative;
   padding: 110px 0;
 }
+
 .section-bg {
   background-size: cover;
   position: relative;
-  background-position: left;
+  background-position: center;
   z-index: 0;
   padding: 0;
-  min-height: auto;
+  min-height: 100vh; /* Set minimum height to 100% viewport height */
+  min-width: 100vw;
   overflow: hidden;
 }
+
+
+.contact-info {
+
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+
+
 .contact-form {
   position: relative;
   padding: 45px 0 45px 60px;
 }
-.contact-title{
+
+.contact-title {
   text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
 }
-
-
 
 .contact-form:before {
   position: absolute;
@@ -40,38 +54,20 @@ body{
   left: 0;
   border-radius: 6px;
   background: #ffffff;
-  box-shadow: 10px 40px 40px rgba(0,0,0,.2);
+  box-shadow: 10px 40px 40px rgba(0, 0, 0, .2);
   pointer-events: none;
   right: auto;
   width: 100vw;
 }
+
 .particles-js-canvas-el {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1;
 }
-.contact-form input {
-  border: 0;
-  background: transparent;
 
-  display: block;
-  width: 100%;
-  min-height: 50px;
-  padding: 11px 0;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 27px;
-
-  background-color: transparent;
-  background-image: none;
-  border-radius: 0;
-  -webkit-appearance: none;
-  transition: .3s ease-in-out;
-  border: 2px solid transparent;
-  border-bottom-color: rgba(0,0,0,.1);
-}
-
+.contact-form input,
 .contact-form textarea {
   border: 0;
   background: transparent;
@@ -82,45 +78,35 @@ body{
   font-size: 16px;
   font-weight: 600;
   line-height: 27px;
-
   background-color: transparent;
   background-image: none;
   border-radius: 0;
   -webkit-appearance: none;
   transition: .3s ease-in-out;
   border: 2px solid transparent;
-  border-bottom-color: rgba(0,0,0,.1);
+  border-bottom-color: rgba(0, 0, 0, .1);
 }
-.contact-form input::placeholder {
-color:#222;
-}
-.contact-form textarea::placeholder {
-color:#222;
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #222;
 }
+
 .contact-form input {
   margin-bottom: 30px;
-  font-size: 16px;
-  font-weight: 600;
   height: 55px;
 }
-.contact-form input:hover, .contact-form input:focus{
+
+.contact-form input:hover,
+.contact-form input:focus,
+.contact-form textarea:hover,
+.contact-form textarea:focus {
   outline: none;
   box-shadow: none;
   background: transparent;
   border: 2px solid transparent;
   border-bottom-color: rgb(254, 132, 111);
-
 }
-.contact-form textarea:hover, .contact-form textarea:focus{
-background: transparent; 
-  outline: none;
-box-shadow: none;
-   border: 2px solid transparent;
-  border-bottom-color: rgb(254, 132, 111);
-
-}
-
 
 .taso-btn {
   background-color: #fff;
@@ -129,19 +115,14 @@ box-shadow: none;
   -webkit-box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.32);
   box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.17);
 }
+
 .contact-info {
   padding: 0 30px 0px 0;
 }
 
-h2.contact-title {
-  font-size: 35px;
-  font-weight: 600;
+.contact-info p,
+.info-right h4 {
   color: #fff;
-  margin-bottom: 30px;
-}
-
-.contact-info p {
-  color: #ececec;
 }
 
 ul.contact-info {
@@ -150,17 +131,13 @@ ul.contact-info {
 
 ul.contact-info li {
   margin-bottom: 22px;
+  display: flex;
+  width: 100%;
 }
-
-
 
 ul.contact-info span {
   font-size: 20px;
   line-height: 26px;
-}
-ul.contact-info li {
-  display: flex;
-  width: 100%;
 }
 
 .info-left {
@@ -176,14 +153,15 @@ ul.contact-info li {
 }
 
 .info-right h4 {
-  color: #fff;
   font-size: 18px;
 }
-.contact-page .info-left i{
-color: #FE846F;
+
+.contact-page .info-left i {
+  color: #fe846f;
 }
+
 .btn {
-display: inline-block;
+  display: inline-block;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -198,30 +176,29 @@ display: inline-block;
   line-height: 28px;
   border: 0px;
   border-radius: 10px;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
+
 .btn-big {
   color: #ffffff;
+  background: #fe846f;
+  border: 2px solid #fe846f;
+  margin: 50px auto 0;
+  padding: 10px 30px;
+  font-size: 17px;
+  line-height: 28px;
+  border-radius: 10px;
+  transition: .2s;
   -webkit-box-shadow: 0px 5px 20px 0px rgba(45, 45, 45, 0.47843137254901963);
   box-shadow: 2px 5px 10px 0px rgba(45, 45, 45, 0.19);
-  color: #fff !important;
-  margin-right: 20px;
-  background: #FE846F;
-  transition: .2s;
-  border: 2px solid #FE846F;
-  margin-top: 50px;
 }
 
 @media only screen and (max-width: 767px) {
-.contact-form {
-  padding: 30px;
-}
-.contact-form:before {
-  width: 100%;
-}
+  .contact-form {
+    padding: 30px;
+  }
 
+  .contact-form:before {
+    width: 100%;
+  }
 }
